@@ -1,0 +1,15 @@
+---
+alwaysApply: true
+---
+### Generate Cursor Rules – Working Directory Discipline
+
+- Always run `pwd` first and record the path in the status update before any t
+ool calls when handling requests like "/Generate Cursor Rules".
+- If a shell is available, execute `pwd | cat` to avoid pagers. Example command to run:
+
+```bash
+pwd | cat
+```
+
+- Mention the current working directory explicitly in your micro status update right before executing any subsequent commands or file edits.
+- If the working directory is not the project root, `cd` to the repository root before proceeding with rule generation or edits.
